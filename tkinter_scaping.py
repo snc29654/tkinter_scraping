@@ -21,10 +21,19 @@ def  data_print():
 def btn_click():
     textExample.delete("1.0",tkinter.END)
     data_print()
+    
+def btn_click6():
+    
+    textExample.delete("1.0",tkinter.END)
 
 # ボタン
 btn = tkinter.Button(root, text='実行', command=btn_click)
 btn.place(x=10, y=80)
+
+btn6 = tkinter.Button(root, text='入力クリア', command=btn_click6)
+btn6.place(x=10, y=570)
+
+
 
 # 画面サイズ
 root.geometry('700x600')

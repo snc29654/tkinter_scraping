@@ -26,7 +26,7 @@ def  data_print():
     textExample.insert(tkinter.END,data.find_all("p"))
 
 
-    web_site="..\\scraping_result.html"
+    web_site="../scraping_result.html"
     f = open(web_site, 'w',encoding='utf-8', errors='ignore')
     message=str(data.find_all("a"))
 

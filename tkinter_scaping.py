@@ -25,13 +25,8 @@ def  data_print():
     data = BeautifulSoup(site.text, 'html.parser')
     textExample.insert(tkinter.END,data.find_all("p"))
 
-    SAMPLE_DIR = "C:\\html_link"
- 
-    if not os.path.exists(SAMPLE_DIR):
-    # ディレクトリが存在しない場合、ディレクトリを作成する
-        os.makedirs(SAMPLE_DIR)       
 
-    web_site=SAMPLE_DIR+"\\scraping_result.html"
+    web_site="..\\scraping_result.html"
     f = open(web_site, 'w',encoding='utf-8', errors='ignore')
     message=str(data.find_all("a"))
 
